@@ -16,7 +16,7 @@ def main():
     # reading movie title
     f = open('../movie_titles.txt', 'r', encoding = "ISO-8859-1")
     for line in f:
-        if movie_count >= 10:
+        if movie_count >= movie_limit:
             continue
         values = line[:-1].split(',')
         movie_names.append(values[2])
